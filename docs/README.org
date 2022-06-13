@@ -1,0 +1,5 @@
+#+title: Garden Automation
+#+author: Ashleigh Wilson
+
+* Introduction
+  This is an empty repository for my garden automation project.
