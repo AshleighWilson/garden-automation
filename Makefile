@@ -1,3 +1,5 @@
+DEV_BOARD = "/dev/serial/by-id/usb-Adafruit_Feather_ESP32-S2_TFT_84:f7:03:f5:a5:52-if00"
+
 all:
 	pio -f -c vim run
 
@@ -15,3 +17,6 @@ uploadfs:
 
 update:
 	pio -f -c vim update
+
+serial:
+	picocom $(DEV_BOARD) --echo --omap crcrlf --quiet -b 115200
