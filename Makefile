@@ -18,5 +18,8 @@ uploadfs:
 update:
 	pio -f -c vim update
 
-serial:
-	picocom $(DEV_BOARD) --echo --omap crcrlf --quiet -b 115200
+monitor:
+	pio -f -c vim run --target monitor
+
+init:
+	pio project init --ide vim
